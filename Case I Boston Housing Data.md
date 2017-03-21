@@ -1,4 +1,4 @@
-**Data Mining Case Study for Boston and German Credit Score data**
+**Data Mining Case Study for Boston**
 
 **Boston Housing Data**
 
@@ -73,6 +73,7 @@ have affected the regression trees. GAM proves to be best in this case, giving t
 
 Scaling affects the performance of ANNs and it is proved above by the huge difference in MSE.  
 For this particular problem, we should proceed with GAM
+<hr/>  
 
 **Generalized Linear Regression**
 
@@ -83,6 +84,7 @@ In our case the dependent variable is still considered linear in relationship wi
 Stepwise variable selection method was used with AIC as the selection criteria between null model(no variables) and full model (all the variables). The optimal model was obtained with AIC of 2214.9 with variables. It is done Training set
 
 lstat + rm + ptratio + chas + dis + nox + crim + zn + black + rad + tax
+<hr/>  
 
 **Cross validation:**
 
@@ -97,6 +99,7 @@ TrainMSEGLM: 19.07758
 TestMSEGLM: 30.73509
 
 
+<hr/>  
 
 **Regression Trees**
 
@@ -110,6 +113,7 @@ Train MSE Tree: 11.40524, Test MSE Tree: 37.27731
 
 
   
+  <hr/>  
   
 **Generalized Additive Model**
 
@@ -121,6 +125,7 @@ The main idea here Is to fit splines for continuous variables as they exhibit no
 **TrainMSEGAM** : 6.20655
 
   
+  <hr/>  
   
 **Neural Networks**
 
