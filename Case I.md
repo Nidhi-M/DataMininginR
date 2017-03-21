@@ -137,12 +137,12 @@ TrainMSENNet\_scaled: 3.467056
 TestMSENNet\_unscaled: 94.9931
 
 TestMSENNet\_scaled: 28.83375
-
-  
-    
   
   
-##German Credit Scoring
+      
+  
+  
+**German Credit Scoring**
 
 The German credit data set contains 1000 observations and 21 variables with &quot;response&quot; being the response variable.  There are no empty observations.  This data defines 20 variables that are used in credit scoring decisions for those who apply to a bank for a loan.  The bank wants to minimize risk and maximize its profit by loaning to those who are good credit risks and not loaning to those who are bad risks, however there is a cost to each wrong decision.  Cost is higher for a loan that defaults, than not loaning to someone who would pay back the loan
 
@@ -161,15 +161,15 @@ Pcut used here is 0.1667 (1/6 as the cost is ratio 1:5)
 Credit Cost is calculated based on penalizing the misclassification based on the cost 1:5 function can seen here
 **Major Findings**
 
-Results
+**Results**
 
-| Method | In-sample | Out-Sample |
-| --- | --- | --- |
-|   | AUC | Credit Cost | Misclassification Rate | AUC | Credit Cost | Misclassification Rate |
-| Logistic (GLM) | 0.84 | 0.414 | 0.3133 | 0.746 | 0.632 | 0.36 |
-| Classification Tree | 0.80 | 0.02333333 | 0.5933 | 0.72 | 0..01 | 0.544 |
-| GAM | 0.85 | 0.70 | 0.1946 | 0.75 | 0.98 | 0.26 |
-| LDA | 0.85 | 0.429 | 0.312 | 0.749 | 0.64 | 0.352 |
+| Method              | In-sample | Out-Sample  |                        |       |             |                        |
+|---------------------|-----------|-------------|------------------------|-------|-------------|------------------------|
+|                     | AUC       | Credit Cost | Misclassification Rate | AUC   | Credit Cost | Misclassification Rate |
+| Logistic (GLM)      | 0.84      | 0.414       | 0.3133                 | 0.746 | 0.632       | 0.36                   |
+| Classification Tree | 0.80      | 0.02333333  | 0.5933                 | 0.72  | 0..01       | 0.544                  |
+| GAM                 | 0.85      | 0.70        | 0.1946                 | 0.75  | 0.98        | 0.26                   |
+| LDA                 | 0.85      | 0.429       | 0.312                  | 0.749 | 0.64        | 0.352                  |
 
 As you can see from the above table the out-sample performance for each is different.
 
@@ -237,7 +237,9 @@ AUC Train: 0.85       AUC Test: .75
 **Linear Discriminant Analysis**
 
 Linear discriminant analysis (LDA) is a generalization of Fisher&#39;s linear discriminant, a method used in  [statistics](https://en.wikipedia.org/wiki/Statistics),  [pattern recognition](https://en.wikipedia.org/wiki/Pattern_recognition) and  [machine learning](https://en.wikipedia.org/wiki/Machine_learning) to find a  [linear combination](https://en.wikipedia.org/wiki/Linear_combination) of  [features](https://en.wikipedia.org/wiki/Features_(pattern_recognition)) that characterizes or separates two or more classes of objects or events. The resulting combination may be used as a  [linear classifier](https://en.wikipedia.org/wiki/Linear_classifier), or, more commonly, for  [dimensionality reduction](https://en.wikipedia.org/wiki/Dimensionality_reduction) before later  [classification](https://en.wikipedia.org/wiki/Statistical_classification).
-
+   
+  
+  
 **Results**
 
 TestMisLDA: 0.352        TrainMisLDA: 0.312
@@ -245,10 +247,10 @@ TestMisLDA: 0.352        TrainMisLDA: 0.312
 creditcost.LDA.out: 0.64  creditcost.LDA.in: 0.429
 
 AUC Train: 0.85       AUC Test: .749
+    
+    
+    
   
-    
-    
-
 ***References:***
 
 All Definitions adopted from Wikipedia
