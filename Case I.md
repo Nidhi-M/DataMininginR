@@ -1,6 +1,4 @@
-**Data Mining Case Study**
-
-**Boston and German Credit Score data**
+**Data Mining Case Study for Boston and German Credit Score data**
 
 **Boston Housing Data**
 
@@ -110,6 +108,9 @@ As you can see the split wrt to rm, lstat , rad, nox are used at nodes at differ
 
 Train MSE Tree: 11.40524, Test MSE Tree: 37.27731
 
+
+  
+  
 **Generalized Additive Model**
 
 **generalized additive model (GAM)** is a  [generalized linear model](https://en.wikipedia.org/wiki/Generalized_linear_model) in which the linear predictor depends linearly on unknown  [smooth functions](https://en.wikipedia.org/wiki/Smooth_function) of some predictor variables, and interest focuses on inference about these smooth functions. GAMs were originally developed by  [Trevor Hastie](https://en.wikipedia.org/wiki/Trevor_Hastie) and  [Robert Tibshirani](https://en.wikipedia.org/wiki/Robert_Tibshirani) to blend properties of  [generalized linear models](https://en.wikipedia.org/wiki/Generalized_linear_model) with  [additive models](https://en.wikipedia.org/wiki/Additive_model).
@@ -119,6 +120,8 @@ The main idea here Is to fit splines for continuous variables as they exhibit no
 
 **TrainMSEGAM** : 6.20655
 
+  
+  
 **Neural Networks**
 
 Neural networks or  [connectionist](https://en.wikipedia.org/wiki/Connectionism) systems are a  [computational model](https://en.wikipedia.org/wiki/Computational_model) used in computer science and other research disciplines, which is based on a large collection of simple neural units ( [artificial neurons](https://en.wikipedia.org/wiki/Artificial_neuron)), loosely analogous to the observed behavior of a  [biological brain](https://en.wikipedia.org/wiki/Brain)&#39;s axons. Each neural unit is connected with many others, and links can enhance or inhibit the activation state of adjoining neural units. Each individual neural unit computes using summation function. There may be a threshold function or limiting function on each connection and on the unit itself, such that the signal must surpass the limit before propagating to other neurons. These systems are self-learning and trained, rather than explicitly programmed, and excel in areas where the solution or  [feature detection](https://en.wikipedia.org/wiki/Feature_detection_(computer_vision)) is difficult to express in a traditional computer program.
@@ -135,9 +138,11 @@ TestMSENNet\_unscaled: 94.9931
 
 TestMSENNet\_scaled: 28.83375
 
-
-
-**German Credit Scoring**
+  
+    
+  
+  
+##German Credit Scoring
 
 The German credit data set contains 1000 observations and 21 variables with &quot;response&quot; being the response variable.  There are no empty observations.  This data defines 20 variables that are used in credit scoring decisions for those who apply to a bank for a loan.  The bank wants to minimize risk and maximize its profit by loaning to those who are good credit risks and not loaning to those who are bad risks, however there is a cost to each wrong decision.  Cost is higher for a loan that defaults, than not loaning to someone who would pay back the loan
 
@@ -174,11 +179,7 @@ So considering the cost Classification Tree is best for this data
 
 **Generalized Linear Model (Logistic Regression)**
 
- logistic regression, or logit regression, or logit model [
-# [1]
-](https://en.wikipedia.org/wiki/Logistic_regression#cite_note-Freedman09-1) is a  [regression](https://en.wikipedia.org/wiki/Regression_analysis) model where the  [dependent variable (DV)](https://en.wikipedia.org/wiki/Dependent_and_independent_variables) is  [categorical](https://en.wikipedia.org/wiki/Categorical_variable). This article covers the case of a  [binary dependent variable](https://en.wikipedia.org/wiki/Binary_variable)—that is, where it can take only two values, &quot;0&quot; and &quot;1&quot;, which represent outcomes such as pass/fail, win/lose, alive/dead or healthy/sick. Cases where the dependent variable has more than two outcome categories may be analysed in  [multinomial logistic regression](https://en.wikipedia.org/wiki/Multinomial_logistic_regression), or, if the multiple categories are  [ordered](https://en.wikipedia.org/wiki/Level_of_measurement#Ordinal_type), in  [ordinal logistic regression](https://en.wikipedia.org/wiki/Ordinal_logistic_regression). [
-# [2]
-](https://en.wikipedia.org/wiki/Logistic_regression#cite_note-wal67est-2) In the terminology of  [economics](https://en.wikipedia.org/wiki/Economics), logistic regression is an example of a  [qualitative response/discrete choice model](https://en.wikipedia.org/wiki/Discrete_choice).
+ logistic regression, or logit regression, or [logit model](https://en.wikipedia.org/wiki/Logistic_regression#cite_note-Freedman09-1) is a  [regression](https://en.wikipedia.org/wiki/Regression_analysis) model where the  [dependent variable (DV)](https://en.wikipedia.org/wiki/Dependent_and_independent_variables) is  [categorical](https://en.wikipedia.org/wiki/Categorical_variable). This article covers the case of a  [binary dependent variable](https://en.wikipedia.org/wiki/Binary_variable)—that is, where it can take only two values, &quot;0&quot; and &quot;1&quot;, which represent outcomes such as pass/fail, win/lose, alive/dead or healthy/sick. Cases where the dependent variable has more than two outcome categories may be analysed in  [multinomial logistic regression](https://en.wikipedia.org/wiki/Multinomial_logistic_regression), or, if the multiple categories are  [ordered](https://en.wikipedia.org/wiki/Level_of_measurement#Ordinal_type), in  [ordinal logistic regression](https://en.wikipedia.org/wiki/Ordinal_logistic_regression).In the terminology of  [economics](https://en.wikipedia.org/wiki/Economics), logistic regression is an example of a  [qualitative response/discrete choice model](https://en.wikipedia.org/wiki/Discrete_choice).
 
 Using Stepwise variables are selected for this GLM model, with AIC of 719
 
@@ -191,7 +192,8 @@ TrainMisGLM: 0.312 TrainMisGLM.step: 0.3133333
 creditcost.GLM.out: 0.632 creditcost.GLM.in: 0.4146667
 
 AUC Train: 0.8483076 AUC Test: .7490926
-
+  
+   
 **Cross Validation**
 
 This is considering the entire data set and assessing the model if it the model is biased towards the test set. A 5 fold cross validation is done using cv.glm (K=5 usual standards)
@@ -199,7 +201,8 @@ This is considering the entire data set and assessing the model if it the model 
 An prediction error of about 0.3389333 that is adjusted for LOOCV bias is obtained meaning the model does not show any anomaly
 
 
-
+  
+  
 **Classification Tree**
 
 Classification tree methods (i.e., decision tree methods) are recommended when the data mining task contains classifications or predictions of outcomes, and the goal is to generate rules that can be easily explained and translated into SQL or a natural query language.
@@ -216,6 +219,8 @@ creditcost.Tree.out: 0.01  creditcost.Tree.in: 0.02333333
 
 AUC Train: 0.80       AUC Test: .7240926
 
+  
+  
 **Generalized Additive Model**
 
 Splines are fitted for continuous variable like age, amount and duration
@@ -240,8 +245,11 @@ TestMisLDA: 0.352        TrainMisLDA: 0.312
 creditcost.LDA.out: 0.64  creditcost.LDA.in: 0.429
 
 AUC Train: 0.85       AUC Test: .749
+  
+    
+    
 
-References:
+***References:***
 
 All Definitions adopted from Wikipedia
 
